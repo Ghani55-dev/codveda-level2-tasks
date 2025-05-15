@@ -33,7 +33,7 @@ def fetch_price(coin):
 # Main function to run the program
 def main():
     # Ask the user to input the coin name (e.g., bitcoin)
-    coin = input("Enter cryptocurrency (e.g., bitcoin, ethereum): ").lower()
+    coin = input("Enter cryptocurrency (e.g.,  bitcoin, ethereum, dogecoin, litecoin): ").lower()
     fetch_price(coin)  # Call the function to fetch and display the price
 
 # Run the program if this script is the main entry point
