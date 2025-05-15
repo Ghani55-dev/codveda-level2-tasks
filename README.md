@@ -91,9 +91,47 @@ You can change the url and tag selectors inside the script to scrape data from o
 Web scraping must comply with website terms of service.
 Not all websites allow scraping — always test responsibly.
 
+---
+
+## ✅ Level 2 - Task 3: API Integration (Cryptocurrency Price Checker)
+
+This Python script fetches the current price of any cryptocurrency (e.g., Bitcoin, Ethereum, Dogecoin) in **Indian Rupees (INR)** using the **CoinGecko API**.
+
+---
+
+### 🧠 Features
+
+- Accepts user input for the cryptocurrency name
+- Fetches live price from CoinGecko's public API
+- Displays price in INR (₹)
+- Handles invalid coin names and network/API errors
+
+---
+## Example:
+
+Enter cryptocurrency (e.g., bitcoin, ethereum): bitcoin
+💰 Current price of Bitcoin: ₹5672341
+
+## ⚙️ Dependencies
+pip install requests
+
+## 📌 Notes
+No API key required (CoinGecko is public & free)
+
+Supported coins: bitcoin, ethereum, dogecoin, litecoin, etc.
+
+Output is fetched in real-time using the endpoint:
+https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr
+
+## 🔗 Author
+This project is part of my internship tasks at Codveda Technology.
+#CodvedaJourney #CodvedaExperience #FutureWithCodveda
+
 ### 💻 How to Run
 
 ```bash
+python crypto_price.py
+
 python web_scraper.py
 
 python todo_cli.py
