@@ -54,8 +54,47 @@ This is a CLI-only application for demonstration purposes.
 This project is part of my internship tasks at Codveda Technology.
 #CodvedaJourney #CodvedaExperience #FutureWithCodveda
 
-## 💻 How to Run
+---
+
+## ✅ Level 2 - Task 2: Web Scraper
+
+This Python script scrapes data (e.g., article titles) from a website and saves the results into a CSV file using `requests`, `BeautifulSoup`, and `csv`.
+
+---
+
+### 🧠 Features
+
+- Scrapes article titles from a target website
+- Saves the results into `scraped_data.csv`
+- Uses basic HTML parsing with BeautifulSoup
+- Handles failed web requests
+
+---
+
+## Make sure requests and beautifulsoup4 are installed:
+
+pip install requests beautifulsoup4
+
+## 📁 Output File Example
+scraped_data.csv
+
+| Title                          |
+|--------------------------------|
+| OpenAI launches new model...  |
+| Python 3.12 released...        |
+| ...                            |
+
+## 🛠️ Customization
+You can change the url and tag selectors inside the script to scrape data from other pages (e.g., product listings, news headlines, blog posts).
+
+## 📌 Notes
+Web scraping must comply with website terms of service.
+Not all websites allow scraping — always test responsibly.
+
+### 💻 How to Run
 
 ```bash
+python web_scraper.py
+
 python todo_cli.py
 
